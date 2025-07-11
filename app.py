@@ -7,7 +7,7 @@ import pandas as pd
 
 model=tf.keras.models.load_model("model.h5")
 
-with open("Gender_encoder.pkl","rb") as file:
+with open("gender_encoder.pkl","rb") as file:
     gender_encoder=pickle.load(file)
 
 with open("one_hot_encoder_geo.pkl","rb") as file:
